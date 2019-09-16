@@ -21,9 +21,12 @@ public class Review
 // double num1= num2%3; yes will work
 
 //PROB 2 Given a class (with or without parameters), declare and initialize an object for that class
-    public class Pumpkin{
-    public Pumpkin(int n){
-        num = n;
-    }
+//    public class Pumpkin{
+//    public Pumpkin(int n){
+//        num = n;
+//    }
+// Pumpkin p = new Pumpkin(3);
+
+//PROB 3 Write a class with instance variables, constructor, and methods
 
 }
