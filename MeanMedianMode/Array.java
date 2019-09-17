@@ -30,7 +30,9 @@ public class Array
         return sum;
     }
     
-    public int getMean(){
+    public double getMean(int a){
+        return a/100;
         
     }
+    
 }
