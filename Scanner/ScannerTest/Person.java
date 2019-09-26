@@ -2,26 +2,53 @@
 /**
  * Write a description of class Person here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Kayla)
+ * @version (926)
  */
 public class Person
 {
     private String fName = " ";
     private String mName = " ";
     private String lName = " ";
-
+    private String fullName = " ";
+String inputStr = "";
+        int s = inputStr.indexOf(" ");
     public Person(String fullName){
-        String inputStr = "";
-        int si = inputStr.indexOf(" ");
-        fName = inputStr.substring(0, si);
-        lName = inputStr.substring(si + 1);
-        if(si+1 != inputStr.lastIndexOf(" ")){
-            fullName = fName + lName;}
-            else{ 
-            fullName = fName + mName + lName;
-        }
+         this.fullName=fullName;
         
+    }
+    
+    public String parseName(){
+         
+        while(inputStr.indexOf(",")!=-1  ){ //1 or 2
+            if(inputStr.indexOf(" ")!= inputStr.lastIndexOf(" ")){
+                lName = inputStr.substring(0,s);        
+                fName = inputStr.substring (s+1,inputStr.lastIndexOf(" "));
+                mName = inputStr.substring(inputStr.lastIndexOf(" ")+1);
+                String fullName = lName + fName + mName;
+            }else{
+                lName = inputStr.substring(0,s);
+                fName = inputStr.substring (s+1);
+                String fullname = lName = fName;
+            } 
+        }
+        while(inputStr.indexOf(",")==-1){ // 3 or 4
+            if(inputStr.indexOf(" ")!= inputStr.lastIndexOf(" ")){
+                fName = inputStr.substring(0,s);        
+                mName = inputStr.substring (s+1,inputStr.lastIndexOf(" "));
+                lName = inputStr.substring(inputStr.lastIndexOf(" ")+1);
+                String fullName = fName + mName + lName;
+            }else{
+                fName = inputStr.substring(0,s);
+                lName = inputStr.substring (s+1);
+                String fullName = fName + lName;
+            }
+        
+        }                               
+
+        return fullName;
+    
+    
     }
 }
 
