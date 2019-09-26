@@ -2,8 +2,8 @@
 /**
  * Write a description of class Runner here.
  *
- * @author (Kayla Garcia)
- * @version (924)
+ * @author (your name)
+ * @version (a version number or a date)
  */
 import java.util.Scanner;
 public class Runner
@@ -18,7 +18,7 @@ public class Runner
             System.out.println(inputStr);
         }
         Scanner Person = new Scanner(System.in);
-        
+        System.out.println(Person);
         
         
     }
