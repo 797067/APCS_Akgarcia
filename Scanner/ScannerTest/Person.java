@@ -19,7 +19,7 @@ public class Person
 
     public void parseName(){
         int s = fullName.indexOf(" ");
-        while(fullName.indexOf(",")!=-1  ){ //1 or 2
+        if(fullName.indexOf(",")!=-1  ){ //1 or 2
             if(fullName.indexOf(" ")!= fullName.lastIndexOf(" ")){
                 lName = fullName.substring(0,s);        
                 fName = fullName.substring (s+1,fullName.lastIndexOf(" "));
@@ -30,8 +30,8 @@ public class Person
                 fName = fullName.substring (s+1);
                 String fullname = lName = fName;
             } 
-        }
-        while(fullName.indexOf(",")==-1){ // 3 or 4
+        } else{
+         // 3 or 4
             if(fullName.indexOf(" ")!= fullName.lastIndexOf(" ")){
                 fName = fullName.substring(0,s);        
                 mName = fullName.substring (s+1,fullName.lastIndexOf(" "));
@@ -44,9 +44,16 @@ public class Person
             }
 
         }                               
-
-        //return fullName;
-
+       //return fullName;      
+    }
+    public String getFirstName(){
+        return fName;
+    }
+    public String getMiddleName(){
+        return mName;
+    }
+    public String getLastName(){
+        return lName;
     }
 }
 
