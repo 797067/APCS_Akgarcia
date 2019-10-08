@@ -11,7 +11,7 @@ public class Person
     private String mName = " ";
     private String lName = " ";
     private String fullName = " ";
-    
+
     public Person(String fullName){
         this.fullName=fullName;
         parseName();
@@ -31,7 +31,7 @@ public class Person
                 String fullname = lName = fName;
             } 
         } else{
-         // 3 or 4
+            // 3 or 4
             if(fullName.indexOf(" ")!= fullName.lastIndexOf(" ")){
                 fName = fullName.substring(0,s);        
                 mName = fullName.substring (s+1,fullName.lastIndexOf(" "));
@@ -44,14 +44,17 @@ public class Person
             }
 
         }                               
-       //return fullName;      
+        //return fullName;      
     }
+
     public String getFirstName(){
         return fName;
     }
+
     public String getMiddleName(){
         return mName;
     }
+
     public String getLastName(){
         return lName;
     }
