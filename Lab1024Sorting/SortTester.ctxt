@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SortTester
+comment1.params=numList\ numOfElements
+comment1.target=void\ loadArray(java.util.ArrayList,\ int)
+comment2.params=
+comment2.target=void\ bubbleSort()
+comment3.params=
+comment3.target=void\ insertSort()
+comment4.params=
+comment4.target=void\ main()
+numComments=5
