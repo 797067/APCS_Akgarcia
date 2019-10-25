@@ -9,9 +9,9 @@ import java.util.*;
 
 public class SortTester
 {
-    private static ArrayList<Integer> numList = new ArrayList<Integer>();
+    private  ArrayList<Integer> numList = new ArrayList<Integer>();
 
-    public static void loadArray(ArrayList<Integer> numList, int numOfElements){
+    public  void loadArray(ArrayList<Integer> numList, int numOfElements){
         for(int i = 0; i < numOfElements; i++){
             numList.add((int)(Math.random()*100)+1);
 

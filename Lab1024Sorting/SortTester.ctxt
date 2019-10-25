@@ -8,4 +8,6 @@ comment3.params=
 comment3.target=void\ insertSort()
 comment4.params=
 comment4.target=void\ selectionSort()
-numComments=5
+comment5.params=args
+comment5.target=void\ printlist(java.lang.String[])
+numComments=6
