@@ -2,8 +2,8 @@
 /**
  * Write a description of class StudList here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Kayla Garcia)
+ * @version (1029)
  */
 import java.util.*;
 public class StudList
@@ -12,6 +12,10 @@ public class StudList
     
     public void addStudent(String fullName){
         
+        
+            
+            
     }
     public void deleteStudent(String lastName){}
+
 }
