@@ -29,8 +29,17 @@ public class StringCheck
     
     public ArrayList<String> wordChecker (String [] str, String key){
         ArrayList<String>wordList = new ArrayList<String>();
-        return null;
+        int resultIndex = 0;
+        for(int i=0; i<str.length; i++){
+            if(str[i] != null ){
+                if(str[i].indexOf(key) != -1){
+                    wordList.add(str[i]);
+                
+                }
+            }
         
+        }
+        return wordList;
     }
     
     public String[] wordChecker(ArrayList<String> str, String key){
