@@ -14,18 +14,13 @@ public class Student
     private int stuNumber;
     private double gpa;
     
-    public Student(int stuNumber){      
+    public Student(int stuNumber, double gpa, String fullName){      
         this.stuNumber = stuNumber;
-       
-    }
-    public Student(double gpa){      
         this.gpa = gpa;
-       
-    }
-    public Student(String fullName){      
         this.fullName=fullName;
         parseName();
     }
+  
     public void parseName(){
         int s = fullName.indexOf(" ");
         if(fullName.indexOf(",")!=-1  ){ //1 or 2
