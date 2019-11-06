@@ -23,7 +23,17 @@ public class StudList
         studList.add(student);
     }
 
-    public void deleteStudent(String lastName){}
+    public void deleteStudent(String lastName){
+        Scanner kb = new Scanner(System.in);
+        System.out.println("To remove a student type their Last Name ");
+        if(kb.equals(lastName)){ 
+            String name = kb.nextLine(student.indexOf(lastName));
+            double gpa = kb.nextDouble(student.indexOf(lastName));
+            int stuNumber = kb.nextInt(student.indexOf(lastName));
+            Student student = new Student(stuNumber,gpa,name);
+            studList.remove(student);
+        }
+    }
 
     public void printList(){
         

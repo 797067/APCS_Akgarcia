@@ -21,7 +21,7 @@ public class StudListRunner
                studListRunner.studList.addStudent();
             }
             if(i == 2){
-               studListRunner.studList.printList();
+               studListRunner.studList.deleteStudent();
             }
         }
     }
