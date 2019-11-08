@@ -9,7 +9,12 @@ import java.util.*;
 public class StudList
 {
     private ArrayList<Student> studList = new ArrayList<Student>();
-
+    
+    public StudList(){
+      
+    
+    }
+    
     public void addStudent(){
         Scanner kb = new Scanner (System.in);
         System.out.println("Input Name ");
@@ -26,13 +31,7 @@ public class StudList
     public void deleteStudent(String lastName){
         Scanner kb = new Scanner(System.in);
         System.out.println("To remove a student type their Last Name ");
-        if(kb.equals(lastName)){ 
-            String name = kb.nextLine(student.indexOf(lastName));
-            double gpa = kb.nextDouble(student.indexOf(lastName));
-            int stuNumber = kb.nextInt(student.indexOf(lastName));
-            Student student = new Student(stuNumber,gpa,name);
-            studList.remove(student);
-        }
+        
     }
 
     public void printList(){
