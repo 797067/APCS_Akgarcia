@@ -15,28 +15,33 @@ public class StudList
     
     }
     
-    public void addStudent(){
-        Scanner kb = new Scanner (System.in);
-        System.out.println("Input Name ");
-        String name = kb.nextLine();
-        System.out.println("Input Student Number ");
-        int stuNumber = kb.nextInt();
-        System.out.println("Input Gpa ");    
-        double gpa = kb.nextDouble();
+    public void addStudent(String fullName, int stuNumber, double gpa){
+        
 
-        Student student = new Student(stuNumber,gpa,name);
+        Student student = new Student(stuNumber,gpa,fullName);
         studList.add(student);
     }
 
-    public void deleteStudent(String lastName){
-        Scanner kb = new Scanner(System.in);
-        System.out.println("To remove a student type their Last Name ");
-        
+    public void deleteStudent(int inputNumber){
+       for(int i = 0; i< studList.size(); i++){
+        Student student = studList.get(i);
+        if(student.getStuNumber() == inputNumber){
+            studList.remove(i);
+        }
+        }
     }
 
     public void printList(){
-        
-        
+        for(int i = 0; i < studList.size(); i++){
+            Student student = studList.get(i);
+            System.out.println(studList.get(i).getFirstName());
+            System.out.println(studList.get(i).getStuNumber());
+            System.out.println(studList.get(i).getGpa());
+        }
+        }
     }
+            
+        
+        
+    
 
-}
