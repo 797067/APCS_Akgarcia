@@ -30,7 +30,17 @@ public class StudList
         }
         }
     }
-
+    
+    public void deleteStudent(String inputString){
+        for(int i = 0; i < studList.size(); i++){
+            Student student = studList.get(i);
+            if (student.getFirstName() == intputString){
+                studList.remove(i);
+            }
+        }
+    
+    }
+    
     public void printList(){
         for(int i = 0; i < studList.size(); i++){
             Student student = studList.get(i);
