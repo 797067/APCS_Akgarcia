@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=StudList
+comment1.params=
+comment1.target=StudList()
+comment2.params=fullName\ stuNumber\ gpa
+comment2.target=void\ addStudent(java.lang.String,\ int,\ double)
+comment3.params=inputNumber
+comment3.target=void\ deleteStudent(int)
+comment4.params=
+comment4.target=void\ printList()
+numComments=5
