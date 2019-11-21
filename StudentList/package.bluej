@@ -5,24 +5,9 @@ dependency1.type=UsesDependency
 dependency2.from=StudList
 dependency2.to=Student
 dependency2.type=UsesDependency
-<<<<<<< HEAD
 editor.fx.0.height=0
 editor.fx.0.width=0
 editor.fx.0.x=0
-editor.fx.0.y=0
-objectbench.height=177
-objectbench.width=934
-package.divider.horizontal=0.6
-package.divider.vertical=0.7325581395348837
-package.editor.height=497
-package.editor.width=844
-package.editor.x=131
-package.editor.y=45
-package.frame.height=788
-=======
-editor.fx.0.height=1167
-editor.fx.0.width=974
-editor.fx.0.x=953
 editor.fx.0.y=0
 objectbench.height=341
 objectbench.width=934
@@ -33,7 +18,6 @@ package.editor.width=844
 package.editor.x=953
 package.editor.y=0
 package.frame.height=1167
->>>>>>> 99d0ee4157cc5c0b3e281594f1c03d633f69007f
 package.frame.width=974
 package.numDependencies=2
 package.numTargets=3
