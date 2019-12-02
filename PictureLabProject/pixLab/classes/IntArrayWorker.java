@@ -5,10 +5,27 @@ public class IntArrayWorker
   /** two dimensional matrix */
   private int[][] matrix = null;
   
+  public int getColTotal(int colLook){
+      int colTotal = 0;
+      for(int r =0; r<matrix.length;r++){
+          for (int c=0; c<matrix[r].length; c++){
+              if (c == colLook){
+                  colTotal += matrix[r][c];
+                }
+            }
+        }
+      return colTotal;
+    }
   public int getLargest(){
     int largest = matrix[0][0];
-    for(int ){
-    }
+    for(int r=0; r<matrix.length; r++){
+        for(int c=0; c<matrix[r].length; c++){
+            if(matrix[r][c] > largest){
+                largest = matrix[r][c];
+            }
+        }
+    }   
+    return largest;
     }
   public int getCount (int val){
     int count = 0;
