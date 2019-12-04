@@ -5,6 +5,18 @@ public class IntArrayWorker
   /** two dimensional matrix */
   private int[][] matrix = null;
   
+  public void loadEvensOdds(int[][] arr)
+  {
+      for (int index = 0; index < arr.length / 2; index++)
+      {
+          arr[index] = index*2;
+          
+      }
+      for(int index = arr.length/2; index< arr.length; index++){
+          arr[index] = index*2+1;
+        }
+    } 
+  
   public int getColTotal(int colLook){
       int colTotal = 0;
       for(int r =0; r<matrix.length;r++){
