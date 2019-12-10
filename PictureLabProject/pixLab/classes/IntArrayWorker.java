@@ -9,11 +9,11 @@ public class IntArrayWorker
   {
       for (int index = 0; index < arr.length / 2; index++)
       {
-          arr[index] = index*2;
+          arr[index] = arr[index*2];
           
       }
       for(int index = arr.length/2; index< arr.length; index++){
-          arr[index] = index*2+1;
+          arr[index] = arr[index*2+1];
         }
     } 
   

@@ -100,6 +100,8 @@ public class Picture extends SimplePicture
     }
   }
   
+  
+  
   public void keepOnlyBlue()
   {
     Pixel[][] pixels = this.getPixels2D();
