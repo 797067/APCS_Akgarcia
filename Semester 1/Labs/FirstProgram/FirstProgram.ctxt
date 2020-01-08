@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=FirstProgram
+comment0.text=\r\n\ First\ Program.\r\n\r\n\ @author\ (Kayla\ Garcia)\r\n\ @version\ (815)\r\n
+comment1.params=
+comment1.target=FirstProgram()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ FirstProgram\r\n
+comment2.params=name\ n
+comment2.target=void\ printName(java.lang.String,\ int)
+comment3.params=args
+comment3.target=void\ main(java.lang.String[])
+numComments=4
