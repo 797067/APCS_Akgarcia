@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+package pixLab.classes;
+
+>>>>>>> a6d3117bc55a33417d785ed4ec5320a4599aefd4
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 

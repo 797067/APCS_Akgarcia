@@ -1,8 +1,62 @@
+<<<<<<< HEAD
+=======
+package pixLab.classes;
+
+>>>>>>> a6d3117bc55a33417d785ed4ec5320a4599aefd4
 public class IntArrayWorker
 {
   /** two dimensional matrix */
   private int[][] matrix = null;
   
+<<<<<<< HEAD
+=======
+  public void loadEvensOdds(int[][] arr)
+  {
+      for (int index = 0; index < arr.length / 2; index++)
+      {
+          arr[index] = arr[index*2];
+          
+      }
+      for(int index = arr.length/2; index< arr.length; index++){
+          arr[index] = arr[index*2+1];
+        }
+    } 
+  
+  public int getColTotal(int colLook){
+      int colTotal = 0;
+      for(int r =0; r<matrix.length;r++){
+          for (int c=0; c<matrix[r].length; c++){
+              if (c == colLook){
+                  colTotal += matrix[r][c];
+                }
+            }
+        }
+      return colTotal;
+    }
+  public int getLargest(){
+    int largest = matrix[0][0];
+    for(int r=0; r<matrix.length; r++){
+        for(int c=0; c<matrix[r].length; c++){
+            if(matrix[r][c] > largest){
+                largest = matrix[r][c];
+            }
+        }
+    }   
+    return largest;
+    }
+  public int getCount (int val){
+    int count = 0;
+    for(int r=0; r< matrix.length; r++){
+        for(int c= 0; c< matrix[r].length; c++){
+            if(matrix[r][c]==val){
+                count++;
+            }
+        }
+    }
+    return count;
+    }
+    
+>>>>>>> a6d3117bc55a33417d785ed4ec5320a4599aefd4
   /** set the matrix to the passed one
     * @param theMatrix the one to use
     */

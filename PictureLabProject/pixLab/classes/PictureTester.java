@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+package pixLab.classes;
+
+>>>>>>> a6d3117bc55a33417d785ed4ec5320a4599aefd4
 /**
  * This class contains class (static) methods
  * that will help you test the Picture class 
@@ -16,6 +21,32 @@ public class PictureTester
     beach.zeroBlue();
     beach.explore();
   }
+<<<<<<< HEAD
+=======
+  /** Method to test zeroBlue */
+  public static void testNegate()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.negate();
+    beach.explore();
+  }
+    public static void testGrayscale()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.grayscale();
+    beach.explore();
+  }
+   /** Method to test zeroBlue */
+  public static void testKeepOnlyBlue()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.keepOnlyBlue();
+    beach.explore();
+  }
+>>>>>>> a6d3117bc55a33417d785ed4ec5320a4599aefd4
   
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
@@ -25,7 +56,31 @@ public class PictureTester
     caterpillar.mirrorVertical();
     caterpillar.explore();
   }
+<<<<<<< HEAD
   
+=======
+  public static void testMirrorVerticalRightToLeft()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorVerticalRightToLeft();
+    caterpillar.explore();
+  }
+  public static void testMirrorHorizontal()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontal();
+    caterpillar.explore();
+  }
+  public static void testMirrorHorizontalBotToTop()
+  {
+    Picture caterpillar = new Picture("caterpillar.jpg");
+    caterpillar.explore();
+    caterpillar.mirrorHorizontalBotToTop();
+    caterpillar.explore();
+  }
+>>>>>>> a6d3117bc55a33417d785ed4ec5320a4599aefd4
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
@@ -58,7 +113,11 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+<<<<<<< HEAD
     testZeroBlue();
+=======
+    //testZeroBlue();
+>>>>>>> a6d3117bc55a33417d785ed4ec5320a4599aefd4
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
@@ -67,6 +126,12 @@ public class PictureTester
     //testFixUnderwater();
     //testMirrorVertical();
     //testMirrorTemple();
+<<<<<<< HEAD
+=======
+    //testMirrorHorizontal();
+    testMirrorHorizontalBotToTop();
+    //testMirrorVerticalRightToLeft();
+>>>>>>> a6d3117bc55a33417d785ed4ec5320a4599aefd4
     //testMirrorArms();
     //testMirrorGull();
     //testMirrorDiagonal();
